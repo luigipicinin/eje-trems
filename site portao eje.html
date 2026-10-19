@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escola Judiciária Eleitoral - TRE-MS</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        judicial: {
+                            50: '#f0f6fe',
+                            100: '#ddecfc',
+                            600: '#1d4ed8',
+                            800: '#002B49', // Azul Marinho Institucional
+                            900: '#001A2C',
+                        },
+                        accent: {
+                            500: '#D97706', // Dourado/Âmbar Institucional
+                            600: '#B45309',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans antialiased">
+
+    <!-- Top Bar Institucional -->
+    <div class="bg-judicial-900 text-gray-300 text-xs py-2 px-4 border-b border-judicial-800">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <span>Tribunal Regional Eleitoral de Mato Grosso do Sul</span>
+            <div class="flex items-center space-x-4">
+                <a href="https://www.tre-ms.jus.br" target="_blank" class="hover:text-white transition">Portal TRE-MS</a>
+                <span class="text-gray-500">|</span>
+                <a href="#contato" class="hover:text-white transition">Transparência & Contato</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navegação Principal -->
+    <header class="bg-white sticky top-0 z-50 shadow-sm border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Identidade / Logo -->
+                <div class="flex items-center space-x-3">
+                    <div class="w-12 h-12 bg-judicial-800 rounded-lg flex items-center justify-center text-white text-xl font-bold shadow-md">
+                        <i class="fa-solid fa-scale-balanced"></i>
+                    </div>
+                    <div>
+                        <h1 class="text-xl font-bold text-judicial-800 tracking-tight leading-tight">EJE-MS</h1>
+                        <p class="text-xs text-gray-500 font-medium">Escola Judiciária Eleitoral de MS</p>
+                    </div>
+                </div>
+
+                <!-- Menu Desktop -->
+                <nav class="hidden md:flex space-x-6 text-sm font-medium text-gray-700">
+                    <a href="#inicio" class="hover:text-judicial-600 transition">Início</a>
+                    <a href="#sobre" class="hover:text-judicial-600 transition">Institucional</a>
+                    <a href="#cursos" class="hover:text-judicial-600 transition">Cursos & Eventos</a>
+                    <a href="#projetos" class="hover:text-judicial-600 transition">Projetos de Cidadania</a>
+                    <a href="#publicacoes" class="hover:text-judicial-600 transition">Publicações</a>
+                    <a href="#contato" class="hover:text-judicial-600 transition">Contato</a>
+                </nav>
+
+                <!-- Botão CTA EAD -->
+                <div class="hidden md:block">
+                    <a href="#cursos" class="bg-judicial-800 hover:bg-judicial-900 text-white px-4 py-2 rounded-lg text-sm font-semibold transition shadow hover:shadow-md inline-flex items-center gap-2">
+                        <i class="fa-solid fa-graduation-cap text-accent-500"></i>
+                        Portal do Aluno (EAD)
+                    </a>
+                </div>
+
+                <!-- Botão Mobile -->
+                <button id="mobile-menu-btn" class="md:hidden text-gray-600 hover:text-gray-900 focus:outline-none">
+                    <i class="fa-solid fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Menu Mobile -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200 px-4 pt-2 pb-4 space-y-2">
+            <a href="#inicio" class="block px-3 py-2 rounded-md hover:bg-gray-100 font-medium">Início</a>
+            <a href="#sobre" class="block px-3 py-2 rounded-md hover:bg-gray-100 font-medium">Institucional</a>
+            <a href="#cursos" class="block px-3 py-2 rounded-md hover:bg-gray-100 font-medium">Cursos & Eventos</a>
+            <a href="#projetos" class="block px-3 py-2 rounded-md hover:bg-gray-100 font-medium">Projetos de Cidadania</a>
+            <a href="#publicacoes" class="block px-3 py-2 rounded-md hover:bg-gray-100 font-medium">Publicações</a>
+            <a href="#contato" class="block px-3 py-2 rounded-md hover:bg-gray-100 font-medium">Contato</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="relative bg-judicial-800 text-white py-20 lg:py-28 overflow-hidden">
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="max-w-3xl">
+                <span class="inline-block py-1 px-3 rounded-full bg-accent-500/20 text-accent-500 text-xs font-semibold uppercase tracking-wider mb-4 border border-accent-500/30">
+                    Capacitação & Cidadania
+                </span>
+                <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight mb-6">
+                    Aperfeiçoamento contínuo da Justiça Eleitoral e fortalecimento da Democracia.
+                </h1>
+                <p class="text-lg text-gray-300 mb-8 leading-relaxed">
+                    A Escola Judiciária Eleitoral de Mato Grosso do Sul promove formação técnica a magistrados, promotores, servidores e programas voltados à conscientização cívica da sociedade.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#cursos" class="bg-accent-500 hover:bg-accent-600 text-white font-medium px-6 py-3 rounded-lg shadow-lg hover:shadow-xl transition inline-flex items-center gap-2">
+                        Ver Cursos Abertos
+                        <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                    <a href="#sobre" class="bg-white/10 hover:bg-white/20 text-white font-medium px-6 py-3 rounded-lg border border-white/20 transition backdrop-blur-sm">
+                        Conhecer a Escola
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Acesso Rápido -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-10 relative z-20">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+            <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100 hover:border-judicial-600 transition group cursor-pointer">
+                <div class="w-12 h-12 bg-blue-50 text-judicial-600 rounded-lg flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition">
+                    <i class="fa-solid fa-calendar-check"></i>
+                </div>
+                <h3 class="font-bold text-gray-900 mb-1">Calendário Acadêmico</h3>
+                <p class="text-sm text-gray-500">Cronograma de palestras, eventos e webinários deste ano.</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100 hover:border-judicial-600 transition group cursor-pointer">
+                <div class="w-12 h-12 bg-blue-50 text-judicial-600 rounded-lg flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition">
+                    <i class="fa-solid fa-award"></i>
+                </div>
+                <h3 class="font-bold text-gray-900 mb-1">Emissão de Certificados</h3>
+                <p class="text-sm text-gray-500">Valide ou baixe seus certificados de eventos e oficinas.</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100 hover:border-judicial-600 transition group cursor-pointer">
+                <div class="w-12 h-12 bg-blue-50 text-judicial-600 rounded-lg flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition">
+                    <i class="fa-solid fa-book-open"></i>
+                </div>
+                <h3 class="font-bold text-gray-900 mb-1">Revista Eletrônica</h3>
+                <p class="text-sm text-gray-500">Artigos doutrinários e jurisprudência eleitoral comentada.</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100 hover:border-judicial-600 transition group cursor-pointer">
+                <div class="w-12 h-12 bg-blue-50 text-judicial-600 rounded-lg flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition">
+                    <i class="fa-solid fa-users"></i>
+                </div>
+                <h3 class="font-bold text-gray-900 mb-1">Eleitor do Futuro</h3>
+                <p class="text-sm text-gray-500">Ações educativas em escolas públicas e privadas de MS.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre a EJE-MS -->
+    <section id="sobre" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+                <span class="text-accent-600 font-bold text-sm tracking-widest uppercase">Institucional</span>
+                <h2 class="text-3xl font-extrabold text-judicial-800 mt-2 mb-6 leading-tight">
+                    Excelência na formação jurídica e na promoção da cidadania
+                </h2>
+                <p class="text-gray-600 leading-relaxed mb-4">
+                    Criada com a missão de qualificar continuamente o corpo funcional e os operadores do Direito Eleitoral, a Escola Judiciária Eleitoral de Mato Grosso do Sul (EJE-MS) atua em duas frentes fundamentais:
+                </p>
+                <div class="space-y-4 my-6">
+                    <div class="flex items-start gap-4">
+                        <div class="w-8 h-8 rounded-full bg-blue-100 text-judicial-800 flex items-center justify-center font-bold flex-shrink-0">
+                            1
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-900">Capacitação Profissional</h4>
+                            <p class="text-sm text-gray-600">Treinamento avançado em Processo Judicial Eletrônico, prestação de contas eleitorais e atualização legislativa.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="w-8 h-8 rounded-full bg-blue-100 text-judicial-800 flex items-center justify-center font-bold flex-shrink-0">
+                            2
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-900">Educação para a Cidadania</h4>
+                            <p class="text-sm text-gray-600">Formação de jovens eleitores, inclusão de comunidades tradicionais e combate à desinformação no processo eleitoral.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-judicial-50 p-8 rounded-2xl border border-judicial-100">
+                <h3 class="text-lg font-bold text-judicial-900 mb-4 border-b pb-2">Diretoria da Escola</h3>
+                <ul class="space-y-4 text-sm text-gray-700">
+                    <li class="flex justify-between items-center py-2 border-b border-gray-200">
+                        <span class="font-semibold text-gray-900">Diretor(a):</span>
+                        <span>Membro Efetivo do Tribunal</span>
+                    </li>
+                    <li class="flex justify-between items-center py-2 border-b border-gray-200">
+                        <span class="font-semibold text-gray-900">Vice-Diretor(a):</span>
+                        <span>Membro Jurista Substituto</span>
+                    </li>
+                    <li class="flex justify-between items-center py-2 border-b border-gray-200">
+                        <span class="font-semibold text-gray-900">Coordenação Geral:</span>
+                        <span>Secretaria da EJE</span>
+                    </li>
+                    <li class="flex justify-between items-center py-2">
+                        <span class="font-semibold text-gray-900">Regimento Interno:</span>
+                        <a href="#" class="text-judicial-600 hover:underline flex items-center gap-1 font-medium">
+                            <i class="fa-regular fa-file-pdf"></i> Baixar PDF
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cursos e Capacitações -->
+    <section id="cursos" class="py-16 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+                <div>
+                    <span class="text-accent-600 font-bold text-sm tracking-widest uppercase">Capacitação</span>
+                    <h2 class="text-3xl font-extrabold text-judicial-800 mt-2">Cursos & Eventos em Destaque</h2>
+                </div>
+                <p class="text-gray-500 text-sm mt-2 md:mt-0 max-w-sm">
+                    Inscrições abertas para comunidade jurídica, servidores e público geral.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition border border-gray-200 flex flex-col">
+                    <div class="bg-judicial-800 text-white p-4 flex justify-between items-center">
+                        <span class="text-xs bg-green-500 text-white px-2 py-1 rounded font-bold uppercase">Inscrições Abertas</span>
+                        <span class="text-xs text-gray-300"><i class="fa-regular fa-clock"></i> 20 Horas</span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <span class="text-xs font-semibold text-judicial-600 uppercase">Direito Eleitoral</span>
+                            <h3 class="font-bold text-xl text-gray-900 mt-1 mb-3">Seminário de Propaganda Eleitoral e Novas Mídias</h3>
+                            <p class="text-gray-600 text-sm mb-4 leading-relaxed">
+                                Análise das resoluções atuais do TSE sobre propaganda na internet e uso de inteligência artificial.
+                            </p>
+                        </div>
+                        <div class="border-t pt-4 mt-auto">
+                            <div class="text-xs text-gray-500 mb-3"><i class="fa-solid fa-location-dot"></i> Híbrido (Presencial no Plenário do TRE-MS & YouTube)</div>
+                            <button class="w-full bg-judicial-800 hover:bg-judicial-900 text-white text-sm font-semibold py-2 rounded-lg transition">Inscrever-se</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition border border-gray-200 flex flex-col">
+                    <div class="bg-judicial-800 text-white p-4 flex justify-between items-center">
+                        <span class="text-xs bg-accent-500 text-white px-2 py-1 rounded font-bold uppercase">Em Breve</span>
+                        <span class="text-xs text-gray-300"><i class="fa-regular fa-clock"></i> 40 Horas</span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <span class="text-xs font-semibold text-judicial-600 uppercase">Processual</span>
+                            <h3 class="font-bold text-xl text-gray-900 mt-1 mb-3">Oficina de Prestação de Contas Eleitorais</h3>
+                            <p class="text-gray-600 text-sm mb-4 leading-relaxed">
+                                Aspectos contábeis, jurídicos e operacionais do Sistema de Prestação de Contas Eleitorais (SPCE).
+                            </p>
+                        </div>
+                        <div class="border-t pt-4 mt-auto">
+                            <div class="text-xs text-gray-500 mb-3"><i class="fa-solid fa-video"></i> 100% Online (Plataforma AVA)</div>
+                            <button class="w-full bg-gray-200 hover:bg-gray-300 text-gray-700 text-sm font-semibold py-2 rounded-lg transition">Avise-me</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition border border-gray-200 flex flex-col">
+                    <div class="bg-judicial-800 text-white p-4 flex justify-between items-center">
+                        <span class="text-xs bg-gray-700 text-white px-2 py-1 rounded font-bold uppercase">Material Disponível</span>
+                        <span class="text-xs text-gray-300"><i class="fa-regular fa-clock"></i> 8 Horas</span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <span class="text-xs font-semibold text-judicial-600 uppercase">Cidadania</span>
+                            <h3 class="font-bold text-xl text-gray-900 mt-1 mb-3">Curso de Formação de Mesários Voluntários</h3>
+                            <p class="text-gray-600 text-sm mb-4 leading-relaxed">
+                                Procedimentos de votação, auditoria de urna eletrônica e atendimento preferencial aos eleitores.
+                            </p>
+                        </div>
+                        <div class="border-t pt-4 mt-auto">
+                            <div class="text-xs text-gray-500 mb-3"><i class="fa-solid fa-mobile-screen"></i> App Mesário & EAD</div>
+                            <button class="w-full border border-judicial-800 text-judicial-800 hover:bg-judicial-50 text-sm font-semibold py-2 rounded-lg transition">Acessar Conteúdo</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programas de Cidadania -->
+    <section id="projetos" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-2xl mx-auto mb-14">
+            <span class="text-accent-600 font-bold text-sm tracking-widest uppercase">Democracia Ativa</span>
+            <h2 class="text-3xl font-extrabold text-judicial-800 mt-1">Projetos Sociais e Educativos</h2>
+            <p class="text-gray-600 mt-2 text-sm">Iniciativas da EJE-MS que levam o debate sobre democracia e voto consciente além dos fóruns eleitorais.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="p-6 bg-white rounded-xl border border-gray-200 shadow-sm flex items-start gap-5">
+                <div class="text-3xl text-judicial-600 bg-blue-50 p-4 rounded-xl">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Projeto Eleitor do Futuro</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-3">
+                        Voltado para estudantes do ensino fundamental e médio de Mato Grosso do Sul, estimulando o alistamento voluntário de jovens a partir de 16 anos e a reflexão sobre o voto livre e consciente.
+                    </p>
+                    <a href="#" class="text-judicial-600 text-sm font-semibold hover:underline">Solicitar palestra na escola &rarr;</a>
+                </div>
+            </div>
+
+            <div class="p-6 bg-white rounded-xl border border-gray-200 shadow-sm flex items-start gap-5">
+                <div class="text-3xl text-accent-500 bg-amber-50 p-4 rounded-xl">
+                    <i class="fa-solid fa-person-circle-check"></i>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Inclusão Eleitoral Indígena e Quilombola</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-3">
+                        Visitas institucionais itinerantes nas aldeias e comunidades de MS, oferecendo materiais explicativos sobre as urnas e garantindo o pleno exercício dos direitos civis.
+                    </p>
+                    <a href="#" class="text-judicial-600 text-sm font-semibold hover:underline">Conhecer o programa &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato & Localização -->
+    <section id="contato" class="py-16 bg-white border-t border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <!-- Informações de Contato -->
+                <div class="lg:col-span-1">
+                    <h3 class="text-2xl font-bold text-judicial-800 mb-4">Fale com a EJE-MS</h3>
+                    <p class="text-gray-600 text-sm mb-6">Estamos à disposição para dúvidas acadêmicas, parcerias institucionais e agendamento de programas escolares.</p>
+                    
+                    <div class="space-y-4 text-sm text-gray-600">
+                        <div class="flex items-center gap-3">
+                            <i class="fa-solid fa-location-dot text-judicial-600 w-5"></i>
+                            <span>Rua Des. Leão Neto do Carmo, 23 - Parque dos Poderes, Campo Grande - MS</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i class="fa-solid fa-phone text-judicial-600 w-5"></i>
+                            <span>(67) 2107-7000 / Ramal EJE</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i class="fa-solid fa-envelope text-judicial-600 w-5"></i>
+                            <span>eje@tre-ms.jus.br</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i class="fa-regular fa-clock text-judicial-600 w-5"></i>
+                            <span>Segunda a Sexta: 12:00 às 18:00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Formulário de Mensagem -->
+                <div class="lg:col-span-2 bg-gray-50 p-8 rounded-xl border border-gray-200">
+                    <form onsubmit="event.preventDefault(); alert('Mensagem enviada com sucesso!');" class="space-y-4">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-bold text-gray-700 uppercase mb-1">Nome Completo</label>
+                                <input type="text" required class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-judicial-600 focus:outline-none text-sm">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-gray-700 uppercase mb-1">E-mail</label>
+                                <input type="email" required class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-judicial-600 focus:outline-none text-sm">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-gray-700 uppercase mb-1">Assunto</label>
+                            <select class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-judicial-600 focus:outline-none text-sm">
+                                <option>Dúvidas sobre Cursos / Inscrições</option>
+                                <option>Emissão de Certificados</option>
+                                <option>Agendamento: Projeto Eleitor do Futuro</option>
+                                <option>Outros Assuntos</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-gray-700 uppercase mb-1">Mensagem</label>
+                            <textarea rows="4" required class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-judicial-600 focus:outline-none text-sm"></textarea>
+                        </div>
+                        <button type="submit" class="bg-judicial-800 hover:bg-judicial-900 text-white px-6 py-2 rounded-lg text-sm font-semibold transition">
+                            Enviar Mensagem
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="bg-judicial-950 text-gray-400 py-10 border-t border-gray-800 text-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-4">
+            <p>&copy; 2026 Escola Judiciária Eleitoral de Mato Grosso do Sul (EJE-MS). Todos os direitos reservados.</p>
+            <div class="flex space-x-6">
+                <a href="https://www.tse.jus.br" target="_blank" class="hover:text-white transition">TSE</a>
+                <a href="https://www.tre-ms.jus.br" target="_blank" class="hover:text-white transition">TRE-MS</a>
+                <a href="#" class="hover:text-white transition">Política de Privacidade</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script Menu Mobile -->
+    <script>
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
